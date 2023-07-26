@@ -5,6 +5,7 @@ const refs = {
 
 let interval = null;
 let isActive = false;
+refs.stopBtn.disabled = true;
 
 refs.startBtn.addEventListener('click', () => {
   isActive = true;
