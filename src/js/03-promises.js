@@ -33,6 +33,7 @@ function promiseGenerator(delay, step, amount) {
 
 refs.form.addEventListener('submit', event => {
   event.preventDefault();
+  // event.currentTarget.reset();
   const {
     elements: { delay, step, amount },
   } = event.currentTarget;
@@ -41,4 +42,5 @@ refs.form.addEventListener('submit', event => {
     step.valueAsNumber,
     amount.valueAsNumber
   );
+  event.currentTarget.reset();
 });
